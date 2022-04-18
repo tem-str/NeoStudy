@@ -26,13 +26,16 @@ public class NeoStudy {
         int dec = scan.nextInt();
         int a = dec;
         int b;
+        
         String hex = decToHex(dec);
         String temp = "";
+        
         while (a != 0) {
             b = a % 2;
             temp = b + temp;
             a = a / 2;
         }
+        
         System.out.println("При переводе в шестнадцатиричную сс = " + hex);
         System.out.println("При переводе в двоичную сс = " + temp);
         System.out.println("Введите двоичное число: ");
@@ -40,6 +43,5 @@ public class NeoStudy {
         Scanner scan2 = new Scanner(System.in);
         String num = scan2.nextLine();
         System.out.println(Integer.parseInt(num,2));
-        
         };
 }
